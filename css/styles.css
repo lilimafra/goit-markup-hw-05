@@ -611,3 +611,21 @@ footer .mt {
 .box_service:hover .animate {
   transform: translateY(0%);
 }
+
+.underline::after {
+  position: absolute;
+  display: block;
+  content: "";
+  background-color: var(--brandcolor);
+  width: 70px;
+  height: 4px;
+  border-radius: 2px;
+  top: 11%;
+  margin-right: 10px;
+  opacity: 0;
+}
+
+.underline a.active::after,
+.underline a:hover::after {
+  opacity: 1;
+}
